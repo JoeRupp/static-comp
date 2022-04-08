@@ -1,0 +1,48 @@
+/* UNIVERSAL ________________________________________________ */
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 160vh;
+  display: grid;
+  grid-template-areas: 
+    'aside'
+    'nav'
+    'main';
+}
+
+/* ASIDE ____________________________________________________ */
+
+aside {
+  background-color: #2C3740;
+  grid-area: aside;
+}
+
+/* NAVIGATION _______________________________________________ */
+
+nav {
+  background-color: #28594B;
+  grid-area: nav;
+}
+
+/* MAIN _____________________________________________________ */
+
+main {
+  background-color: #fff2e2;
+  grid-area: main;
+}
+
+/* MOBILE ___________________________________________________ */
+
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas:
+      'aside nav'
+      'aside main';
+  }
+}
