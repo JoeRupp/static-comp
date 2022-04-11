@@ -97,20 +97,23 @@ label {
 /* NAVIGATION _______________________________________________ */
 
 nav {
-  background-color: #28594B;
+  background-color: #285948;
   grid-area: nav;
 }
 
 .navigation {
   height: 30%;
   display: flex;
+  border-bottom: 1px solid #59ab86;
   flex-direction: row;
   align-items: center;
 }
 
 .header-nav {
-  height: 5vw;
+  height: 4vw;
   width: 8%;
+  border-left: 1px solid #59ab86;
+  border-right: 1px solid #59ab86;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,9 +126,10 @@ nav {
 
 .search-bar {
   width: 68%;
-  height: 100%;
-  background-color: #28594B;
-  font-color: #fff2e2;
+  height: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #285948;
   border: 0;
 }
 
@@ -138,6 +142,33 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.role-title {
+  color: #fff2e2;
+}
+
+.role-buttons {
+  width: 30%;
+  height: 50%;
+}
+
+button {
+  height: 8vh;
+  width: 8vh;
+  color:#fff2e2;
+  background-color: #285948;
+  border-radius: 50%;
+  border: 1px solid #59ab86;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #171f26;
 }
 
 .tabs {
